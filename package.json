@@ -2,16 +2,16 @@
   "name": "@pancakeswap-libs/uikit",
   "version": "0.10.2",
   "description": "Set of UI components for pancake projects",
-  "main": "../Classic-Swap/node_modules/@pancakeswap-libs/uikit/dist/index.cjs.js",
-  "module": "../Classic-Swap/node_modules/@pancakeswap-libs/uikit/dist/index.esm.js",
-  "types": "../Classic-Swap/node_modules/@pancakeswap-libs/uikit/dist/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "repository": "https://github.com/TrasherTravis/classicswap-uikit",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir ../Classic-Swap/node_modules/@pancakeswap-libs/uikit/dist",
+    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
